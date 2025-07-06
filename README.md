@@ -1,69 +1,72 @@
-# React + TypeScript + Vite
+# Library Management System
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple and user-friendly Library Management App built with React and Redux Toolkit to manage books efficiently. The system allows users to add, view, update, and delete books with smooth navigation and real-time UI updates.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+✅ Add new books to the library
 
-## Expanding the ESLint configuration
+✅ View a list of all available books
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+✅ Edit book details (title, author, genre, etc.)
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+✅ Delete books from the system
 
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
+✅ Real-time UI updates using Redux Toolkit Query
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+✅ SweetAlert notifications for actions (success, error, confirmation)
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+✅ Responsive and clean U
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## 🛠️ Tech Stack
 
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+Frontend: React, Redux Toolkit, React Router
+
+Backend: Node.js, Express (if applicable)
+
+API Handling: Redux Toolkit Query
+
+UI Components: Shadcn/UI, Tailwind CSS
+
+Alerts: SweetAlert2
+
+## ⚙️ Installation
+Clone the repository:
+
+bash
+Copy
+Edit
+git clone https://github.com/your-username/your-repo-name.git
+Install dependencies:
+
+bash
+Copy
+Edit
+npm install
+Run the project:
+
+bash
+Copy
+Edit
+npm run dev
+
+## 📄 Usage
+Navigate to /add-book to add a new book.
+
+After adding, you will be redirected to /books to view the updated list.
+
+You can edit or delete books directly from the list.
+
+## 💡 Future Improvements
+Add user authentication (Admin/User roles)
+
+## Pagination and search functionality
+
+Borrow and return system
+
+Backend database integration (MongoDB/Postgres)
+
+## 🤝 Contributing
+Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
+
+
