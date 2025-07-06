@@ -36,7 +36,7 @@ Clone the repository:
 bash
 Copy
 Edit
-git clone https://github.com/your-username/your-repo-name.git
+git clone (https://github.com/sadman1075/Library_Management_Client)
 Install dependencies:
 
 bash
